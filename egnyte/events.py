@@ -69,7 +69,7 @@ class Events(base.Resource):
     _url_template = "pubapi/v1/events/cursor"
     _url_template_list = "pubapi/v1/events"
     _lazy_attributes = {'latest_event_id', 'oldest_event_id', 'timestamp'}
-    poll_delay = 1.0
+    poll_delay = 300.0
     start_id = None
     suppress = None
     folder = None
